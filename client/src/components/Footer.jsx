@@ -66,7 +66,7 @@ export default function Footer() {
                         </div>
                     </Stack>
                 </Grid>
-                <Grid item sm={12} md={12} lg={4}>
+                <Grid item xs={12} sm={12} md={12} lg={4}>
                     <Stack spacing={0.6}>
                         <div style={{
                             fontWeight: 'bold'

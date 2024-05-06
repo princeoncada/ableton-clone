@@ -546,8 +546,13 @@ export default function About() {
                             width: '41.66667vw',
                             height: '41.66667vw',
                         },
+                        [theme.breakpoints.down('md')]: {
+                            width: '41.66667vw',
+                            height: 'auto',
+                        },
                         [theme.breakpoints.down(1280)]: {
-                            width: '85%'
+                            width: '85%',
+                            height: 'auto',
                         }
                     }}>
                         <Box sx={{
@@ -557,21 +562,25 @@ export default function About() {
                             fontSize: '1.875rem',
                             margin: '10%',
                             [theme.breakpoints.down('lg')]: {
-                                fontSize: '1.75rem'
+                                fontSize: '1.rem'
                             },
                             [theme.breakpoints.down('md')]: {
+                                gap: '1.5rem',
                                 fontSize: '1.25rem'
                             },
                             [theme.breakpoints.down('sm')]: {
                                 fontSize: '1rem'
                             }
                         }}>
-                            <div className='roboto-regular' style={{
+                            <Box className='roboto-regular' sx={{
                                 lineHeight: '3rem',
-                                fontWeight: 500
+                                fontWeight: 500,
+                                [theme.breakpoints.down('md')]: {
+                                    lineHeight: '2rem'
+                                }
                             }}>
                                 We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us.
-                            </div>
+                            </Box>
                             <Link sx={{
                                 color: 'blue',
                                 textDecoration: 'none',
